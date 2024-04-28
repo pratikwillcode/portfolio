@@ -26,6 +26,13 @@ export default async function Project() {
     query: projectsQuery,
     tags: ["project"],
   });
+  console.log(projects)
+  projects.sort((a, b) => {
+    const numberA = parseInt(a.slug.split('/')[1]);
+    const numberB = parseInt(b.slug.split('/')[1]);
+  
+    return numberA - numberB;
+  });
 
   return (
     <main className="max-w-7xl mx-auto md:px-16 px-6">

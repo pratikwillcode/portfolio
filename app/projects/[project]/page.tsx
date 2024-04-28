@@ -54,7 +54,7 @@ export default async function Project({ params }: Props) {
       <Slide>
         <div className="max-w-3xl mx-auto">
           <div className="flex items-start justify-between mb-4">
-            <h1 className="font-incognito font-black tracking-tight sm:text-5xl text-3xl mb-4 max-w-sm">
+            <h1 className="font-incognito font-black tracking-tight sm:text-4xl text-3xl mb-4 max-w-sm">
               {project.name}
             </h1>
 
@@ -74,7 +74,7 @@ export default async function Project({ params }: Props) {
 
           <div className="relative w-full h-40 pt-[52.5%]">
             <Image
-              className="rounded-xl border dark:border-zinc-800 border-zinc-100 object-cover"
+              className="rounded-xl border dark:border-zinc-800 border-zinc-100 object-fill"
               layout="fill"
               src={project.coverImage?.image || fallbackImage}
               alt={project.coverImage?.alt || project.name}

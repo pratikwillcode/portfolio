@@ -4,7 +4,7 @@ import {
   type ClientConfig,
   type QueryParams,
 } from "@sanity/client";
-import { projectId, dataset, apiVersion, token, mode } from "@/lib/env.api";
+import { projectId, dataset, apiVersion, mode } from "@/lib/env.api";
 
 const config: ClientConfig = {
   projectId,
@@ -12,7 +12,7 @@ const config: ClientConfig = {
   apiVersion,
   useCdn: mode === "development" ? true : false,
   ignoreBrowserTokenWarning: true,
-  token,
+ 
   perspective: "published",
 };
 
@@ -27,7 +27,7 @@ export async function sanityFetch<QueryResponse>({
   qParams?: QueryParams;
   tags: string[];
 }): Promise<QueryResponse> {
-  return client.fetch<QueryResponse>(query, qParams, {
+  return client.fetch<QueryResponse>(query, qParams || {}, {
     cache: mode === "development" ? "no-store" : "force-cache",
     next: { tags },
   });
