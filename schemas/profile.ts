@@ -29,13 +29,14 @@ const profile = {
         hotspot: true,
         metadata: ["lqip"], // "blurhash", "palette", etc
       },
-      fields: [
-        {
-          name: "alt",
-          title: "Alt",
-          type: "string",
-        },
-      ],
+      // fields: [
+      //   {
+      //     name: "alt",
+      //     title: "Alt",
+      //     type: "string",
+      //   },
+      // ],
+      
       validation: (rule) => rule.required(),
     }),
     defineField({
