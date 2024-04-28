@@ -49,13 +49,14 @@ const project = {
         hotspot: true,
         metadata: ["lqip"],
       },
-      fields: [
-        {
-          name: "alt",
-          title: "Alt",
-          type: "string",
-        },
-      ],
+      // fields: [
+      //   {
+      //     name: "alt",
+      //     title: "Alt",
+      //     type: "string",
+      //   },
+      // ],
+      
     },
     defineField({
       name: "description",
