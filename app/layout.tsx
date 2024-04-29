@@ -15,12 +15,10 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Pratik Awari | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
-  ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "Pratik Awari is a Software Engineer who is passionate about building solutions and contributing to open source communities",
+  url: "https://portfolio-pratik-awari.vercel.app/"
 };
 
 export const metadata: Metadata = {
@@ -34,7 +32,7 @@ export const metadata: Metadata = {
     locale: "en-US",
     type: "website",
     description: options.description,
-    images: options.ogImage,
+    // images: options.ogImage,
   },
   alternates: {
     canonical: options.url,
