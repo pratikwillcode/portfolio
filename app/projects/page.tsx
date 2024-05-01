@@ -26,8 +26,8 @@ export default async function Project() {
   });
   console.log(projects)
   projects.sort((a, b) => {
-    const numberA = parseInt(a.slug.split('/')[1]);
-    const numberB = parseInt(b.slug.split('/')[1]);
+    const numberA = parseInt(a.slug.split('-')[1]);
+    const numberB = parseInt(b.slug.split('-')[1]);
   
     return numberA - numberB;
   });
