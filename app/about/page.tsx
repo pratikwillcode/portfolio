@@ -104,7 +104,7 @@ export default async function About() {
             <Slide delay={0.14}>
               <Usage />
             </Slide>
-            <Heroes />
+{/*             <Heroes /> */}
           </div>
         ))}
     </main>
