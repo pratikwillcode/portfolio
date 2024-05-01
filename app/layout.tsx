@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Pratik Awari | Software Developer",
+  title: "Pratik Awari | Software Engineer",
   description:
     "Pratik Awari is a Software Engineer who is passionate about building solutions and contributing to open source communities",
   url: "https://portfolio-pratik-awari.vercel.app/"
