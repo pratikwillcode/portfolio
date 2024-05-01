@@ -9,12 +9,18 @@ import {
   HiCamera,
   HiOutlineX,
   HiUser,
+  HiHome
 } from "react-icons/hi";
 import Logo from "../../../public/logoportfolio.png";
 
 export default function MobileMenu() {
   const [navShow, setNavShow] = useState(false);
   const data = [
+    {
+      title: "Home",
+      href: "/",
+      icon: HiHome,
+    },
     {
       title: "About",
       href: "/about",
@@ -25,11 +31,11 @@ export default function MobileMenu() {
       href: "/projects",
       icon: HiBeaker,
     },
-    {
-      title: "Blog",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    //   icon: HiBookmarkAlt,
+    // },
     {
       title: "Photos",
       href: "/photos",
